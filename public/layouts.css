@@ -1,0 +1,43 @@
+/* Common styles for table layouts */
+.orca-repr-table2:is([data-multi-col="1"], [data-serie="1"]) {
+  .orca-table2-cell {
+    --orca-border-general: none;
+    min-width: initial;
+    width: initial;
+    max-width: initial;
+  }
+
+  .orca-table2-cell .orca-repr-main:not(.orca-block-dragging)::after {
+    display: block;
+  }
+
+  .orca-table2-cell>.orca-block>.orca-repr>.orca-repr-main>.orca-repr-main-none-editable>.orca-repr-scope-line {
+    display: block;
+  }
+
+  .orca-table2-cell>.orca-block>.orca-repr>.orca-repr-children>.orca-block>.orca-repr:not(.orca-repr-ul)>.orca-repr-main>.orca-repr-main-none-editable>.orca-block-handle:not(:hover) {
+    opacity: 1;
+  }
+}
+
+/* Serie layout styles */
+.orca-repr-table2[data-serie="1"] .orca-table2 {
+  grid-template-columns: 130px 1fr !important;
+}
+
+.orca-repr-table2[data-serie="1"] .orca-table2-cell[data-c="1"] {
+  border-right: 1px solid var(--orca-color-border);
+}
+
+.orca-repr-table2[data-serie="1"] .orca-table2-cell[data-r="1"] {
+  padding-bottom: var(--orca-spacing-md);
+}
+
+.orca-repr-table2[data-serie="1"] .orca-table2-cell:not([data-c="1"])>.orca-block {
+  margin-left: var(--orca-spacing-sm);
+}
+
+/* Multi-column layout styles */
+.orca-repr-table2[data-multi-col="1"] .orca-table2 {
+  grid-template-columns: repeat(var(--orca-table-cols), 1fr) !important;
+}
