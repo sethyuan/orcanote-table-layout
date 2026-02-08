@@ -2,6 +2,8 @@
 
 An Orca Note plugin that formats table blocks for complex layouts.
 
+<img width="953" height="658" alt="SCR-20260207-skea" src="https://github.com/user-attachments/assets/b0127e8e-47b8-419e-8e67-fbfe2ba30409" />
+
 ## Usage
 
 1. Download the zip file from the [releases page](https://github.com/sethyuan/orcanote-table-layout/releases) and extract it into Orca Note's `plugins` directory.
